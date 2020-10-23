@@ -7,7 +7,10 @@
 	},
 	"publisher": "hezylaplacian",
 	"description": "Give your code some help from the Lord",
-	"icon": "src/assets/icon.png",
+	"repository": {
+		"url": "https://github.com/hezylaplacian/basadify.git"
+	},
+	"icon": "icon.png",
 	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.50.0"
