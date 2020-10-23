@@ -1,5 +1,4 @@
 <!--
- Copyright 2020 Hezy Laplacian
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -15,3 +14,19 @@
 -->
 
 # Basadify
+
+תוסף לעורך Visual Studio Code שמוסיף בס"ד לקוד שלכם.
+
+איך עושים?
+
+פותחים קובץ
+לוחצים ctrl+b ctrl+s 
+במקינטוש זה cmd+b cmd+s למה הם יותר מדי טובים למקש קונטרול
+בוחרים איזה סגנון רוצים לברכה - בס"ד, בסיעתא דשמיא, ב"ה ועוד
+יש גם באנגלית
+
+מי שרוצה לתרום לתוסף זה חינם אין כסף מה שניקרא הקוד פתוח תעשו מזלג ותנו בכוכב אני הולך לקנות עם זה בית אחר כך
+
+שלכם לעד,
+
+חזי לפלסיאן
