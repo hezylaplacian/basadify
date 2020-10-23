@@ -57,6 +57,7 @@ function activate(context) {
         quickPick.onDidChangeSelection(([item]) => {
             const statusBarItem = vscode.window.createStatusBarItem();
             statusBarItem.text = "$(book) File Basadified!$(symbol-event)";
+            statusBarItem.tooltip = 'Made with 🚬 by Hezy Laplacian';
             statusBarItem.show();
             const position = editor.selection.end;
             const head = position.with(editor.document.positionAt(0));
