@@ -12,8 +12,9 @@
 		"url": "https://github.com/hezylaplacian/basadify.git"
 	},
 	"icon": "icon.png",
+
 	"galleryBanner": {
-		"color": "#c4c4c4",
+		"color": "darkblue",
 		"theme": "dark"
 	},
 	"version": "1.0.0",
