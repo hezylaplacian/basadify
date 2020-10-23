@@ -48,6 +48,7 @@ export function activate(context: vscode.ExtensionContext) {
 		];
 		const quickPick = vscode.window.createQuickPick();
 		const lang = editor.document.languageId;
+
 		const hashCommentLangs = [
 			'sql',
 			'python',
@@ -60,6 +61,9 @@ export function activate(context: vscode.ExtensionContext) {
 		quickPick.placeholder = "Choose your flavour";
 
 		quickPick.onDidChangeSelection(([item]) => {
+			const statusBarItem = vscode.window.createStatusBarItem();
+			statusBarItem.text = "$(book) File Basadified!$(symbol-event)";
+			statusBarItem.show();
 
 			const position = editor.selection.end;
 			const head = position.with(editor.document.positionAt(0));

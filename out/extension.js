@@ -55,6 +55,9 @@ function activate(context) {
         quickPick.items = sacredMsgs.map(msg => ({ label: msg }));
         quickPick.placeholder = "Choose your flavour";
         quickPick.onDidChangeSelection(([item]) => {
+            const statusBarItem = vscode.window.createStatusBarItem();
+            statusBarItem.text = "$(book) File Basadified!$(symbol-event)";
+            statusBarItem.show();
             const position = editor.selection.end;
             const head = position.with(editor.document.positionAt(0));
             const end = position.with(editor.document.lineAt(editor.document.lineCount - 1).lineNumber);
