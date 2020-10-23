@@ -13,7 +13,7 @@
  limitations under the License.
 -->
 
-# Basadify - Give your code some help from the Lord
+# Basadify 🙏🏻
 
 תוסף לעורך Visual Studio Code שמוסיף בס"ד לקוד שלכם.
 
