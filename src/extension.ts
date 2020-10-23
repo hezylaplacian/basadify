@@ -54,7 +54,13 @@ export function activate(context: vscode.ExtensionContext) {
 			'python',
 			'r',
 			'yaml',
-			'dockerfile'
+			'dockerfile',
+			'perl'
+		]
+		const dashCommentsLangs = [
+			'haskell',
+			'lua',
+			'sql'
 		]
 		quickPick.canSelectMany = false;
 		quickPick.items = sacredMsgs.map(msg => ({ label: msg }));
@@ -76,6 +82,8 @@ export function activate(context: vscode.ExtensionContext) {
 						edit.insert(head, `<!-- בס"ד -->\n\n`);
 					} else if (hashCommentLangs.includes(lang)) {
 						edit.insert(head, `# בס"ד\n\n`);
+					} else if (dashCommentsLangs.includes(lang)) {
+						edit.insert(head, `-- בס"ד\n\n`);
 					} else {
 						edit.insert(head, `/*** בס"ד ***/\n\n`);
 					}
@@ -88,6 +96,8 @@ export function activate(context: vscode.ExtensionContext) {
 						edit.insert(end, `\n\n<!-- בס"ד -->\n`);
 					} else if (hashCommentLangs.includes(lang)) {
 						edit.insert(end, `\n\n# בס"ד\n\n`);
+					} else if (dashCommentsLangs.includes(lang)) {
+						edit.insert(end, `\n\n-- בס"ד\n\n`);
 					} else {
 						edit.insert(end, `\n\n/*** בס"ד ***/\n`);
 					}
@@ -100,6 +110,8 @@ export function activate(context: vscode.ExtensionContext) {
 						edit.insert(position, `	<!-- ${item.label} -->`);
 					} else if (hashCommentLangs.includes(lang)) {
 						edit.insert(position, `	# ${item.label}`);
+					} else if (dashCommentsLangs.includes(lang)) {
+						edit.insert(position, `	-- ${item.label}`);
 					} else if (lang === 'css') {
 						edit.insert(position, ` /* ${item.label} */`);
 					}
