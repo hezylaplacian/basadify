@@ -1,6 +1,6 @@
 {
 	"name": "basadify",
-	"displayName": "basadify",
+	"displayName": "Basadify",
 	"author": {
 		"name": "Hezy Laplacian",
 		"url": "https://www.facebook.com/HezyLaplacian/"
@@ -8,10 +8,16 @@
 	"publisher": "hezylaplacian",
 	"description": "Give your code some help from the Lord",
 	"repository": {
+		"type": "git",
 		"url": "https://github.com/hezylaplacian/basadify.git"
 	},
 	"icon": "icon.png",
+	"galleryBanner": {
+		"color": "#c4c4c4",
+		"theme": "dark"
+	},
 	"version": "1.0.0",
+	"license": "SEE LICENSE FILE",
 	"engines": {
 		"vscode": "^1.50.0"
 	},
