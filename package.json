@@ -16,7 +16,7 @@
 		"color": "#45045e",
 		"theme": "dark"
 	},
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"license": "SEE LICENSE FILE",
 	"engines": {
 		"vscode": "^1.50.0"
@@ -29,17 +29,21 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [{
-			"command": "basadify.basadify",
-			"title": "Basadify - May the Lord help your code 🙏🏻"
-		}],
-		"keybindings": [{
-			"command": "basadify.basadify",
-			"key": "ctrl+b ctrl+s",
-			"mac": "cmd+b cmd+s",
-			"linux": "ctrl+b ctrl+s",
-			"when": "editorTextFocus"
-		}]
+		"commands": [
+			{
+				"command": "basadify.basadify",
+				"title": "Basadify - May the Lord help your code 🙏🏻"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "basadify.basadify",
+				"key": "ctrl+b ctrl+s",
+				"mac": "cmd+b cmd+s",
+				"linux": "ctrl+b ctrl+s",
+				"when": "editorTextFocus"
+			}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
