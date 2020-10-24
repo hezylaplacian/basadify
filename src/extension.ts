@@ -54,10 +54,10 @@ export function activate(context: vscode.ExtensionContext) {
 		quickPick.placeholder = "Choose your flavour";
 
 		quickPick.onDidChangeSelection(([item]) => {
-			const statusBarItem = vscode.window.createStatusBarItem();
-			statusBarItem.text = "$(book) File Basadified!$(symbol-event)";
-			statusBarItem.tooltip = 'Made with 🚬 by Hezy Laplacian';
-			statusBarItem.show();
+			/* 			const statusBarItem: vscode.StatusBarItem = vscode.window.createStatusBarItem();
+						statusBarItem.text = "";
+						statusBarItem.tooltip = 'Made with 💙 by Hezy Laplacian';
+						statusBarItem.show(); */
 
 			const position = editor.selection.end;
 			const head = position.with(editor.document.positionAt(0));
@@ -108,6 +108,7 @@ export function activate(context: vscode.ExtensionContext) {
 				})
 				quickPick.dispose();
 			}
+			vscode.window.setStatusBarMessage('$(book) File Basadified!$(symbol-event) - Made with 🍀 by Hezy Laplacian', 50000);
 		});
 		quickPick.onDidHide(() => quickPick.dispose());
 		quickPick.show();
