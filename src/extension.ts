@@ -35,7 +35,8 @@ export function activate(context: vscode.ExtensionContext) {
 			'r',
 			'yaml',
 			'dockerfile',
-			'perl'
+			'perl',
+			'ignore'
 		]
 		const dashCommentsLangs = [
 			'haskell',

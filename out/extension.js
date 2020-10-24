@@ -31,7 +31,8 @@ function activate(context) {
             'r',
             'yaml',
             'dockerfile',
-            'perl'
+            'perl',
+            'ignore'
         ];
         const dashCommentsLangs = [
             'haskell',
