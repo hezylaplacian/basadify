@@ -1,8 +1,8 @@
 # Basadify 🙏🏻
 
-> כי מי שמאמין לו מתעד
+> כי מי שמאמין לו - מתעד
 
-## בס"דיפיי זה תוסף לתוכנת ויז'ואל סטודיו קוד שמביא לכם קצת עזרה מבונה עולם
+## בס"דיפיי זה תוסף לתוכנת ויז'ואל סטודיו קוד שדואג לכם לקצת עזרה מבונה עולם
 
 איך עושים?
 
@@ -16,9 +16,9 @@
 
 מי שרוצה לתרום לתוסף זה חינם אין כסף מה שניקרא הקוד פתוח ברישיון של אפצ'י אז תעשו מזלג ותנו בכוכב למה אני הולך לקנות עם זה בית אחר כך
 
-_שלכם לעד_
 
-##חזי לפלסיאן
+_שלכם לעד_
+## חזי לפלסיאן 
 
 [העמוד של התוסף בשוק של מיקרוסופט מערכות בע"מ](https://marketplace.visualstudio.com/items?itemName=hezylaplacian.basadify)
 
