@@ -18,7 +18,7 @@
 
 _שלכם לעד_
 
-##חזי לפלסיאן
+## חזי לפלסיאן 
 
 [העמוד של התוסף בשוק של מיקרוסופט מערכות בע"מ](https://marketplace.visualstudio.com/items?itemName=hezylaplacian.basadify)
 
