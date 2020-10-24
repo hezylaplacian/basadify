@@ -16,7 +16,7 @@
 		"color": "#45045e",
 		"theme": "dark"
 	},
-	"version": "1.0.10",
+	"version": "1.0.11",
 	"license": "SEE LICENSE FILE",
 	"engines": {
 		"vscode": "^1.50.0"
