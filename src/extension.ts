@@ -25,27 +25,7 @@ export function activate(context: vscode.ExtensionContext) {
 			vscode.window.showInformationMessage('Editor does not exist');
 			return;
 		}
-
-		const sacredMsgs = [
-			'BOF',
-			'EOF',
-			'בס"ד',
-			'בסד',
-			'בסיעתא דשמיא',
-			'בעזרת השם',
-			'בעז"ה',
-			'ב"ה',
-			'בה',
-			'אם ירצה השם',
-			'אי"ה',
-			'איה',
-			'Basad',
-			'Besiyata Dishmaya',
-			'BS"D',
-			'B"H',
-			"with Gods help",
-			"B'ezrat HaShem"
-		];
+		const sacredMsgs: string[] = [];
 		const quickPick = vscode.window.createQuickPick();
 		const lang = editor.document.languageId;
 
@@ -62,6 +42,13 @@ export function activate(context: vscode.ExtensionContext) {
 			'lua',
 			'sql'
 		]
+
+		if (lang === 'javascriptreact' || lang === 'typescriptreact') {
+			sacredMsgs.push('BOF', 'EOF');
+		} else {
+			sacredMsgs.push('BOF', 'EOF', 'בס"ד', 'בסד', 'בסיעתא דשמיא', 'בעזרת השם', 'בעז"ה', 'ב"ה', 'בה', 'אם ירצה השם', 'אי"ה', 'איה', 'Basad', 'Besiyata Dishmaya', 'BS"D', 'B"H', "with Gods help", "B'ezrat HaShem");
+		}
+
 		quickPick.canSelectMany = false;
 		quickPick.items = sacredMsgs.map(msg => ({ label: msg }));
 		quickPick.placeholder = "Choose your flavour";
